@@ -1,0 +1,32 @@
+
+<h1 mat-dialog-title>Create user </h1>
+<div mat-dialog-content>
+<form class="form-inline" [formGroup]="formGroup">
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field class="w-100">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+        <mat-error > The name is required </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <mat-form-field class="w-100">
+        <mat-label>Surname</mat-label>
+        <input matInput formControlName="surname">
+        <mat-error > The surname is required </mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <mat-form-field class="w-100">
+        <mat-label>Age</mat-label>
+        <input matInput type="number" formControlName="age" min="0">
+        <mat-error > The age is required </mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <button mat-raised-button color="primary" (click)="onSend()" >Send </button>
+</form>
+</div>

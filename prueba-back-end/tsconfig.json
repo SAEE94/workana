@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@driven-adapter/*" :[ "src/infraestructure/driven-adapters/*"],
+      "@usecase/*" :[ "src/domain/usecase/*"],
+      "@model/*" :[ "src/domain/model/*"],
+      "@domain/*" :[ "src/domain/*"],
+      "@infraestructure/*": [ "src/infraestructure/*"],
+      "@shared/*":[ "src/shared/*"]
+    },
+    "incremental": true
+  }
+}
